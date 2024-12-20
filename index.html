@@ -1,42 +1,29 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
-  
-  <div class="form-container">
-    <form id="registrationForm">
-   <h2>Register</h2>
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" placeholder="Enter your Name">
-  <span class="error" id="nameError"></span>
+    
+    <div class="todo-container">
+        <h1>To-Do List</h1>
+        <form id="todo-form">
+          <input type="text" id="todo-input" placeholder="Add a new task" required>
+        <button type="submit">Add</button>          
+ </form>
+           
+        <ul id="todo-list"></ul>
+ 
 
-     <label for="email">Email:</label>
-      <input type="text" id="email" name="email" placeholder="Enter your email">
-      <span class="error" id="emailError"></span>
-
-
-     <label for="password">Password:</label>
-     <input type="text" id="password" name="password" placeholder="password">
-    <span class="error" id="passwordError"></span>
-      
-
-
-    <button type="submit">Submit</button>
-
-    </form>
 
     </div>
+ <script src="script.js"></script>
 
-
-
-
-    <script src="index.js"></script>
+ 
 </body>
 </html>
